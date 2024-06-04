@@ -1,0 +1,159 @@
+:root{
+    --soft-red: hsl(10, 79%, 65%);
+    --cyan: hsl(186, 34%, 60%);
+    --dark-brown: hsl(25, 47%, 15%);
+    --medium-brown: hsl(28, 10%, 53%);
+    --cream: hsl(27, 66%, 92%);
+    --very-pale-orange: hsl(33, 100%, 98%);
+}
+
+/* - Weights: 400, 700 */
+
+body{
+    font-family: "DM Sans", sans-serif;
+    font-size: 18px;
+    margin: 0;
+    background-color: var(--cream);
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.chart{
+    margin: 1rem;
+}
+
+@media screen and (min-width: 378px){
+    .chart{
+        width: 500px;
+    }
+}
+
+.bookmark{
+    padding: 1.5rem 2rem;
+    background-color: var(--soft-red);
+    border-radius: 15px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.bookmark-name{
+    color: var(--cream);
+    font-size: 14px;
+    margin: 0;
+}
+
+.bookmark-amount{
+    color: var(--very-pale-orange);
+    font-size: 22px;
+    font-weight: 700;
+    margin: 0;
+    margin-top: 0.5rem;
+}
+
+.chart-section{
+    margin-top: 1rem;
+    background-color: var(--very-pale-orange);
+    padding: 2rem;
+    border-radius: 15px;
+}
+
+.chart-title{
+    margin: 0;
+    font-weight: 700;
+    font-size: 30px;
+    color: var(--dark-brown);
+}
+
+/* Chart Container */
+
+.chart-container {
+    display: flex;
+    align-items: flex-end;
+    gap: 1rem;
+    height: 200px;
+    padding: 4rem 0 1.5rem 0;
+    margin-bottom: 1rem;
+}
+.bar{
+    flex: 1;
+    background-color: var(--soft-red);
+    border-radius: 5px;
+    text-align: center;
+    position: relative;
+    transition: background-color 0.3s;
+}
+
+.bar:hover {
+    background-color: var(--cyan);
+    cursor: pointer;
+}
+
+.bar-today:hover{
+    background-color: hsl(11, 100%, 85%);
+}
+
+.bar-label {
+    position: absolute;
+    bottom: -25px;
+    width: 100%;
+    text-align: center;
+    color: var(--medium-brown);
+    font-size: 15px;
+}
+.bar-amount {
+    position: absolute;
+    top: -30px;
+    left: 50%;
+    transform: translate(-50%, -50%);    
+    padding: 10px;
+    border-radius: 5px;
+    font-weight: 700;
+    text-align: center;
+    background-color: var(--dark-brown);
+    color: var(--very-pale-orange);
+    font-size: 15px;
+    display: none;
+}
+
+/* Moth Info Section */
+
+.line{
+    width: 100%;
+    height: 1px;
+    background-color: var(--medium-brown);
+    margin: 2rem 0;
+}
+
+.month-section{
+    display: flex;
+    justify-content: space-between;
+}
+
+.month-last{
+    align-self: self-end;
+}
+
+.month-title,
+.month-last-description,
+.month-last-compare{
+    margin: 0;
+    font-size: 15px;
+    color: var(--medium-brown);
+}
+
+.month-last-compare{
+    font-weight: 700;
+    color: var(--dark-brown);
+    text-align: right;
+}
+
+
+.month-amount{
+    margin: 0;
+    margin-top: 0.2rem;
+    font-size: 40px;
+    color: var(--dark-brown);
+    font-weight: 700;
+}

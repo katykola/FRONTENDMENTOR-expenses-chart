@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css">
+
+    <title>Frontend Mentor | Expenses chart component</title>
+  </head>
+  <body>
+
+    <div class="chart">
+      <div class="bookmark">
+        <div class="bookmark-content">
+          <p class="bookmark-name">My balance</p>
+          <p class="bookmark-amount">$921.48</p>
+        </div>
+          <img src="/images/logo.svg" alt="">
+      </div>
+      <div class="chart-section">
+        <p class="chart-title">Spending - Last 7 days</p>
+        <div>
+          <div class="chart-container" id="chart"></div>
+          <!-- mon tue wed thu fri sat sun -->
+        </div>
+        <div class="line"></div>
+        <div class="month-section">
+          <div class="month-this">
+            <p class="month-title">Total this month</p>
+            <p class="month-amount">$478.33</p>
+          </div>
+          <div class="month-last">
+            <p class="month-last-compare">+2.4%</p>
+            <p class="month-last-description">from last month</p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="main.js"></script>
+  </body>
+</html>
